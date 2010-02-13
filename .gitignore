@@ -9,9 +9,6 @@
 *.sock
 *.pid
 .DS_Store
+*.db
+*.sqlite
 
-# Exclude per directory
-# Since repo/ contains a a .git repository,
-# it's rather a good idea to exclude it!
-repo/
-repositories/
