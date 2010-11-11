@@ -7,6 +7,7 @@ admin.autodiscover()
 
 
 urlpatterns = patterns('',
+    # (r'^myapp/', include('myapp.foo.urls')),
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),
     (r'^admin/', include(admin.site.urls)),
     (r'^i18n/', include('django.conf.urls.i18n')),    
@@ -19,4 +20,3 @@ if settings.LOCAL_DEV:
         (baseurlregex, 'django.views.static.serve',
         {'document_root':  settings.MEDIA_ROOT}),
     )
-

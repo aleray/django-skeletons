@@ -6,14 +6,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Brainch {% block extratitle %}{% endblock extratitle %}</title>
     
-    <link rel="stylesheet" href="{{ MEDIA_URL }}css/reset.css" type="text/css" media="all" title="main" charset="utf-8" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}lib/css/reset.css" type="text/css" media="all" title="main" charset="utf-8" />
     <link rel="stylesheet" href="{{ MEDIA_URL }}css/styles.css" type="text/css" media="all" title="main" charset="utf-8" />
     {% block extrahead %}{% endblock extrahead %}
     
 </head>
 <body>
-    {% block content %}
-    
-    {% endblock %}
+    {% block content %}{% endblock %}
 </body>
 </html>
